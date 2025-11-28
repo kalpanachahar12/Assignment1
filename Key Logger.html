@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Logger</title>
+</head>
+<body style="text-align:center; padding:40px;">
+
+    <input id="keyInput" type="text" placeholder="Type here..." />
+    <p id="keyOutput"></p>
+
+    <script>
+        const input = document.getElementById("keyInput");
+        const output = document.getElementById("keyOutput");
+
+        input.addEventListener("keydown", function (event) {
+            output.textContent = "You pressed: " + event.key;
+        });
+    </script>
+
+</body>
+</html>
