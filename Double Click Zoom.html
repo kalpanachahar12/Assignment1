@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Double Click Zoom</title>
+    <style>
+        img {
+            width: 250px;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        .zoom {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body style="text-align:center; padding:40px;">
+
+    <img id="myImg" src="https://via.placeholder.com/250" />
+
+    <script>
+        const image = document.getElementById("myImg");
+
+        image.addEventListener("dblclick", function () {
+            image.classList.toggle("zoom");
+        });
+    </script>
+
+</body>
+</html>
